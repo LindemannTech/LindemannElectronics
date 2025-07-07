@@ -1,0 +1,118 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+    /* Logo Colors */
+    --color-brand-1: #1568c9;
+    --color-brand-2: #2F2F2F;
+
+    /* Primary Colors */
+    --color-bg-light: #F0FFFF;
+    --color-bg-dark: #252526;
+
+    --color-text-light: #FFFFFF;
+    --color-text-dark: #212529;
+    --color-text-mute: #6C757D;
+
+    /* Utility & Status Colors */
+    --color-fail-font: #9C0006;
+    --color-fail-bg: #FFC7CE;
+
+    --color-success-font: #006100;
+    --color-success-bg: #C6EFCE;
+
+    --color-warning-font: #9C6500;
+    --color-warning-bg: #FFEB9C;
+
+    /*Font Sizes*/
+    --fs-xs: clamp(0.75rem, 0.85vw, 0.85rem);
+    --fs-sm: clamp(0.875rem, 0.95vw, 1rem);
+    --fs-md: clamp(1rem, 1.1vw, 1.125rem);
+    --fs-lg: clamp(1.25rem, 1.4vw, 1.5rem);
+    --fs-xl: clamp(1.5rem, 1.8vw, 2rem);
+    --fs-xxl: clamp(2rem, 2.5vw, 3rem);
+
+    /* Spacing for Margins / Padding */
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+}
+
+/* Base Styles */
+body {
+    background-color: var(--color-bg-light);
+}
+
+p {
+    font-size: var(--fs-md);
+}
+
+
+/* Top Contact Header */
+header {
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-light);
+}
+
+.contactCTA, .socialCTA, .socialIconList {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.socialIconList {
+    gap: var(--space-lg);
+}
+
+.socialIconList img {
+    aspect-ratio: 1/1;
+    width: 25px;
+}
