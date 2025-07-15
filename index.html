@@ -1,75 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Lindemann Electronics | Repair &amp; Refurbish Broken Electronics
-    </title>
-    <link rel="stylesheet" href="bootstrap/bootstrap.css" />
-    <link rel="stylesheet" href="global.css" />
-  </head>
-  <body>
-    <header id="contactPanel" class="py-2">
-      <div class="container">
-        <div class="row">
-          <div class="contactCTA col-lg-6 col-md-6 justify-content-around">
-            <p>Email: business.lindemann&#64;gmail.com</p>
-            <p>Phone: +1 &lpar;845&rpar;-699-9491</p>
-          </div>
-          <div class="socialCTA col-lg-6 col-md-6">
-            <p>Operating Hours: 24/7</p>
-            <ul class="socialIconList">
-              <li>
-                <a href="https://www.instagram.com/lindemanntech/">
-                  <img src="media/icons/instagram-brands.svg" alt="Instagram" />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.facebook.com/kevin.lindemann.370/">
-                  <img src="media/icons/facebook-brands.svg" alt="Facebook" />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.youtube.com/@LindemannTech"
-                  ><img src="media/icons/youtube-brands.svg" alt="YouTube" />
-                </a>
-              </li>
-              <li>
-                <a href="Tiktok.com">
-                  <img src="media/icons/tiktok-brands.svg" alt="Tiktok" />
-                </a>
-              </li>
-            </ul>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    Lindemann Electronics | Repair &amp; Refurbish Broken Electronics
+  </title>
+  <link rel="stylesheet" href="bootstrap/bootstrap.css" />
+  <link rel="stylesheet" href="global.css" />
+</head>
+
+<body>
+  <header id="contactPanel" class="py-2">
+    <div class="container">
+      <div class="row">
+        <div class="contactCTA col-lg-6 col-md-6 justify-content-around">
+          <p>Email: business.lindemann&#64;gmail.com</p>
+          <p>Phone: +1 &lpar;845&rpar;-699-9491</p>
+        </div>
+        <div class="socialCTA col-lg-6 col-md-6">
+          <p>Operating Hours: 24/7</p>
+          <ul class="socialIconList">
+            <li>
+              <a href="https://www.instagram.com/lindemanntech/">
+                <img src="media/icons/instagram-brands.svg" alt="Instagram" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/kevin.lindemann.370/">
+                <img src="media/icons/facebook-brands.svg" alt="Facebook" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/@LindemannTech"><img src="media/icons/youtube-brands.svg"
+                  alt="YouTube" />
+              </a>
+            </li>
+            <li>
+              <a href="Tiktok.com">
+                <img src="media/icons/tiktok-brands.svg" alt="Tiktok" />
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-    </header>
-    <nav id="mainNavbar" class="navbar navbar-expand-md py-0">
-      <a href="#" class="navbar-brand">CANDY</a>
-      <button
-        class="navbar-toggler"
-        data-toggle="collapse"
-        data-target="#navLinks"
-        aria-label="Toggle Navigation"
-      >
+    </div>
+  </header>
+  <nav id="mainNavigation" class="navbar navbar-expand-lg p-0">
+    <div class="container">
+      <!-- Logo Here -->
+      <a class="navbar-brand" href="/">
+        <img id="navbar-logo" src="media/logos/Logo Black.png" alt="Lindemann Electronics Logo">
+      </a>
+
+      <!-- Toggler Button only shown on Mobile Devices-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navLinks">
+
+      <!-- Navigational Links Below -->
+      <div class="collapse navbar-collapse justify-content-end me-5" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item active"><a href="#" class="nav-link">HOME</a></li>
-          <li class="nav-item"><a href="" class="nav-link">ABOUT</a></li>
-          <li class="nav-item"><a href="" class="nav-link">TICKETS</a></li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Services</a>
+          </li>
+
+          <!-- Dropdown Menu -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+              <li><a class="dropdown-item" href="#">My Tools</a></li>
+              <li><a class="dropdown-item" href="#">Buy Refurbished</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contact</a>
+          </li>
         </ul>
       </div>
-    </nav>
-    <main>
-      <section></section>
-      <section></section>
-      <section></section>
-      <section></section>
-    </main>
-    <footer></footer>
-    <script src="bootstrap/bootstrap.bundle.js"></script>
-  </body>
+    </div>
+    </div>
+  </nav>
+  <main>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+  </main>
+  <footer></footer>
+  <script src="bootstrap/bootstrap.bundle.js"></script>
+</body>
+
 </html>
